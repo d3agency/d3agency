@@ -1,0 +1,11 @@
+# Import this file from the server's existing Caddyfile.
+http://:3001 {
+	bind 127.0.0.1
+	root * /srv/d3agency/dist
+	encode gzip
+	file_server
+}
+
+d3tech.agency {
+	reverse_proxy 127.0.0.1:3001
+}
