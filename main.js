@@ -1,6 +1,5 @@
 import { ShaderMount, meshGradientFragmentShader, getShaderColorFromString } from '@paper-design/shaders';
 
-document.querySelector('#year').textContent = new Date().getFullYear();
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const colors = ['#fcfcfa', '#e4e6f3', '#d1d7ed', '#fcf4e6', '#ece7f3', '#fcfcfa'];
 const target = document.querySelector('#dream-shader');
