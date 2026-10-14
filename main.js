@@ -1,4 +1,7 @@
+import { connectContactForm } from './contact-form.js';
 import { ShaderMount, meshGradientFragmentShader, getShaderColorFromString } from '@paper-design/shaders';
+
+connectContactForm(document.querySelector('#contact-form'));
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const colors = ['#dceaf7', '#d2e4f5', '#c7dcf0', '#e6f1fa', '#d5e5f4', '#dceaf7'];

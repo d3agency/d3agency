@@ -13,12 +13,12 @@
 <div class="opening">
 <div class="hero-clouds" aria-hidden="true"><img class="cloud-left" src="/cloud-sky.webp" alt="" width="1536" height="1024" fetchpriority="high"><img class="cloud-right" src="/cloud-sky.webp" alt="" width="1536" height="1024" fetchpriority="high"></div>
 <div class="dream-background" id="dream-shader" aria-hidden="true"></div><div class="paper-grain" aria-hidden="true"></div>
-<header class="header"><a class="logo" href="#" aria-label="D3 Agency home">d3<span>agency</span><i aria-hidden="true">✳</i></a><nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">About</a><a class="nav-contact" href="mailto:dhruvdabhi101@gmail.com">Say hello <span aria-hidden="true">↗</span></a></nav></header>
+<header class="header"><a class="logo" href="#" aria-label="D3 Agency home">d3<span>agency</span><i aria-hidden="true">✳</i></a><nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">About</a><a class="nav-contact" href="#contact">Say hello <span aria-hidden="true">↗</span></a></nav></header>
 <section class="hero" aria-labelledby="hero-title">
 <p class="eyebrow"><span class="status-dot"></span> AN INDEPENDENT DIGITAL STUDIO</p>
 <h1 id="hero-title">A little studio.<br>A world of <em>ideas.</em></h1>
 <p class="hero-description">One person. A little imagination. Endless possibilities.<br>Thoughtful websites and products, made by Dhruv.</p>
-<a class="button" href="mailto:dhruvdabhi101@gmail.com">Have an idea? Let’s talk <span aria-hidden="true">↗</span></a>
+<a class="button" href="#contact">Have an idea? Let’s talk <span aria-hidden="true">↗</span></a>
 <div class="hero-foot"><span>DESIGN MEETS DEVELOPMENT</span><a href="#work">Scroll to discover <span aria-hidden="true">↓</span></a><span>SMALL BY DESIGN. HUMAN BY NATURE.</span></div>
 
 </section>
@@ -28,7 +28,32 @@
 <a class="project project-crm" href="https://d3crm.tech" target="_blank" rel="noopener noreferrer"><span class="project-number">002</span><div class="project-title"><span class="project-kind">OUR OWN PRODUCT <i>IN THE MAKING</i></span><h3>D3CRM</h3><p>A website-enquiry CRM. Built in-house.</p></div><div class="project-symbol crm-symbol" aria-hidden="true">d3<span>crm</span></div><span class="project-visit">Explore the product <span aria-hidden="true">↗</span></span></a>
 </section>
 <section class="about content" id="about" aria-labelledby="about-title"><p class="eyebrow">02 — THE PERSON BEHIND THE PIXELS</p><div class="about-body"><h2 id="about-title">No layers.<br>Just <em>a human.</em></h2><div class="about-copy"><p>I’m Dhruv. D3 Agency is my one-person studio for designing websites, building digital experiences, and following interesting ideas.</p><p>You'll work directly with the person making your project. From the first conversation to the final detail, it’s me.</p><div class="about-tags"><span>Web design</span><span>Development</span><span>Digital products</span></div></div></div><div class="studio-signoff"><span>Independent by choice.</span><span>Made with a little obsession for the details. <i aria-hidden="true">✳</i></span></div></section>
-<section class="contact" id="contact" aria-labelledby="contact-title"><p class="eyebrow">EVERY GOOD THING STARTS SOMEWHERE.</p><h2 id="contact-title">Let’s make<br><em>something matter.</em></h2><a class="contact-email" href="mailto:dhruvdabhi101@gmail.com">dhruvdabhi101@gmail.com <span aria-hidden="true">↗</span></a><p>A website, a product, or an idea on a napkin.<br>I’d love to hear about it.</p>
+<section class="contact" id="contact" aria-labelledby="contact-title"><p class="eyebrow">EVERY GOOD THING STARTS SOMEWHERE.</p><h2 id="contact-title">Let’s make<br><em>something matter.</em></h2>
+<p class="contact-intro">A website, a product, or an idea on a napkin.<br>I’d love to hear about it.</p>
+<form class="contact-form" id="contact-form" aria-label="Contact form" aria-describedby="contact-hint">
+  <p class="form-hint" id="contact-hint">Just three things. All fields are required.</p>
+  <div class="contact-fields">
+    <div class="contact-field">
+      <label for="contact-name">Full name</label>
+      <input id="contact-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="contact-name-error">
+      <p class="field-error" id="contact-name-error"></p>
+    </div>
+    <div class="contact-field">
+      <label for="contact-email">Email address</label>
+      <input id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" required aria-describedby="contact-email-error">
+      <p class="field-error" id="contact-email-error"></p>
+    </div>
+    <div class="contact-field contact-message">
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="message" rows="4" required maxlength="3000" placeholder="Tell me a little about your idea…" aria-describedby="contact-message-error"></textarea>
+      <p class="field-error" id="contact-message-error"></p>
+    </div>
+  </div>
+  <div class="form-honeypot" aria-hidden="true"><label for="contact-gotcha">Leave this empty</label><input id="contact-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
+  <div class="form-actions"><button class="button" type="submit" disabled>Send message</button><p class="form-status" role="status" aria-live="polite" aria-atomic="true"></p></div>
+  <noscript><p>Please enable JavaScript to use the form, or email me below.</p></noscript>
+</form>
+<p class="contact-alternative">Prefer email? <a href="mailto:dhruvdabhi101@gmail.com">dhruvdabhi101@gmail.com</a></p>
 <div class="landscape" aria-hidden="true"><img src="/ascii-town.webp" alt="" width="2048" height="683" loading="lazy"></div>
 </section>
 </main>
