@@ -1,7 +1,11 @@
 import { ShaderMount, meshGradientFragmentShader, getShaderColorFromString } from '@paper-design/shaders';
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const colors = ['#fcfcfa', '#e4e6f3', '#d1d7ed', '#fcf4e6', '#ece7f3', '#fcfcfa'];
+const colors = ['#dceaf7', '#d2e4f5', '#c7dcf0', '#e6f1fa', '#d5e5f4', '#dceaf7'];
+const clouds = document.querySelector('.hero-clouds');
+Promise.all([...clouds.querySelectorAll('img')].map((image) => image.decode().catch(() => {})))
+  .then(() => clouds.classList.add('clouds-ready'));
+
 const target = document.querySelector('#dream-shader');
 try {
   const shader = new ShaderMount(target, meshGradientFragmentShader, {
