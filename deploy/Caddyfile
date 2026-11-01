@@ -3,9 +3,15 @@ http://:3001 {
 	bind 127.0.0.1
 	root * /srv/d3agency/dist
 	encode gzip
+	redir /index.html / 308
 	file_server
 }
 
 d3tech.agency {
 	reverse_proxy 127.0.0.1:3001
+}
+
+# Point www DNS to this server before enabling this hostname in production.
+www.d3tech.agency {
+	redir https://d3tech.agency{uri} 308
 }

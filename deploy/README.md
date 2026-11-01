@@ -37,3 +37,21 @@ npm run build
 ```
 
 Reload Caddy only when its configuration changes.
+
+## Search and sharing launch checks
+
+The canonical origin is `https://d3tech.agency`. If serving the `www` alias, point its DNS to the same server so Caddy can provision its certificate and redirect it to the canonical host. The Caddy configuration also redirects `/index.html` to `/`. Do not change other domains or DNS records that you do not own.
+
+After deploying:
+
+```sh
+curl --fail https://d3tech.agency/robots.txt
+curl --fail https://d3tech.agency/sitemap.xml
+curl --fail https://d3tech.agency/llms.txt
+curl --fail https://d3tech.agency/llm.txt
+curl --fail --head https://d3tech.agency/og/home.png
+```
+
+Verify the domain in Google Search Console and Bing Webmaster Tools and submit `https://d3tech.agency/sitemap.xml`. Inspect the homepage after launch. Check social previews in the destination platform’s debugger; existing shares may retain cached metadata. Run PageSpeed Insights against production for actual mobile performance and field data when available. No Search Console verification token has been invented or embedded.
+
+Build output retains the original single-page website. Keep real missing-file 404 responses; do not introduce a single-page-app catch-all for arbitrary paths. The reports directory is internal and is not copied into `dist`.

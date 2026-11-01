@@ -3,6 +3,25 @@ import { ShaderMount, meshGradientFragmentShader, getShaderColorFromString } fro
 
 connectContactForm(document.querySelector('#contact-form'));
 
+if ('IntersectionObserver' in window) {
+  // Hiding happens only once this script runs, so crawlers and no-JS visitors see all content.
+  document.documentElement.classList.add('js-reveal');
+  const seen = new Map();
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+  for (const element of document.querySelectorAll('[data-reveal]')) {
+    const index = seen.get(element.parentElement) ?? 0;
+    seen.set(element.parentElement, index + 1);
+    element.style.setProperty('--reveal-delay', `${index * 60}ms`);
+    observer.observe(element);
+  }
+}
+
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const colors = ['#dceaf7', '#d2e4f5', '#c7dcf0', '#e6f1fa', '#d5e5f4', '#dceaf7'];
 const clouds = document.querySelector('.hero-clouds');

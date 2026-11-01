@@ -1,0 +1,39 @@
+# D3 Agency
+
+> D3 Agency is Dhruv’s independent studio for custom websites, web applications and business automation for founders and businesses.
+
+Canonical website: https://d3tech.agency/
+Alternate brand names: D3, D3 Tech, D3 Tech Agency, d3tech.
+Contact: dhruvdabhi101@gmail.com
+
+## Services
+- Custom website design and development.
+- Web applications and MVPs for founders.
+- Business automation, enquiry forms, CRM connections and workflow integrations.
+
+## Studio and work
+- [About Dhruv and D3 Agency](https://d3tech.agency/#about)
+- [Selected work](https://d3tech.agency/#work): Elevora Talent Partners, Mankrruuti Design Studio and the in-house D3CRM project.
+- [Project enquiries](https://d3tech.agency/#contact)
+- [Sitemap](https://d3tech.agency/sitemap.xml)
+
+## Frequently asked questions
+### What does D3 Agency do?
+D3 Agency is an independent studio run by Dhruv. It designs and builds custom websites, web apps and MVPs, and automates the work around them, such as enquiry forms connected to a CRM and follow-up workflows.
+
+### Who is D3 Agency for?
+Founders with a product idea they want to launch, and businesses that need a better website or want to stop doing the same admin by hand. If you can describe the problem, that is enough to start.
+
+### What can you automate on my website?
+Common examples are enquiry forms that send leads straight to a CRM, instant replies and follow-up emails, notifications to your team, and syncing data between the tools you already use. We also build D3CRM, our own CRM for website enquiries.
+
+### How does a project work?
+It starts with a conversation about what you want to build. Then comes a clear scope, design and development with regular check-ins, and launch. You work directly with Dhruv the whole way, with no account managers in between.
+
+### How much does a website or web app cost?
+Pricing and timelines depend on scope, so they are agreed once we understand what you want to build. Send a message with your idea and you will get a clear estimate before any work starts.
+
+### Is D3 Agency the same as D3 Tech?
+Yes. D3 Agency, D3 Tech and d3tech.agency are the same studio, run by Dhruv.
+
+Pricing and timelines are discussed after understanding the project scope. No guaranteed search rankings or measured client results are claimed.

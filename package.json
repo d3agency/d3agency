@@ -1,21 +1,23 @@
 {
   "name": "d3agency.tech",
   "version": "1.0.0",
-  "description": "",
+  "description": "D3 Agency: websites, web apps and business automation for founders and businesses.",
   "scripts": {
     "test": "node --test",
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "build": "npm run generate && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "generate": "node scripts/generate-site.mjs",
+    "check:seo": "python3 scripts/verify-site.py"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
-  "dependencies": {
-    "@paper-design/shaders": "0.0.81"
-  },
   "devDependencies": {
     "vite": "8.3.4"
+  },
+  "dependencies": {
+    "@paper-design/shaders": "0.0.81"
   }
 }
